@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js" type="module"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Modern Restaurant</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__center container">
+        <img
+          src="/images/Modern-Colour-Logo.png"
+          alt="logo"
+          class="navbar__logo"
+          data-src="img"
+        />
+        <form class="navbar__form">
+          <input
+            type="text"
+            class="navbar__search-input"
+            placeholder="search dish"
+            required
+          />
+          <button type="submit">
+            <i class="fas fa-search navbar__search-icon"></i>
+          </button>
+        </form>
+        <div class="navbar__info">
+          <div class="navbar__info-sub">
+            <i class="fas fa-bookmark"></i>
+            <span class="likes__count">0</span>
+          </div>
+          <div class="navbar__info-sub cart_btn">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cartAmt"></span>
+          </div>
+        </div>
+        <div class="navbar__info-request">
+          <a href="#">
+            <img src="/images/item-7.jpeg" alt="navbar__img" />
+            <p>Request delivery</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="restaurant__info">
+      <div class="restaurant__info-content container">
+        <h1>The Modern Restaurant</h1>
+        <div class="ratings">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="restaurant__info_sub">
+          <div>
+            <i class="fas fa-bookmark" id="location"></i>
+            <h3>Abuja, Nigeria</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories__section">
+      <div class="categories_head">
+        <h2>Categories</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="btns__container container"></div>
+    </div>
+    <section class="products__section">
+      <div class="container">
+        <h2>our dishes</h2>
+        <div class="underline"></div>
+        <div class="productsDOM"></div>
+      </div>
+    </section>
+    <div class="overlay">
+      <div class="cart_container">
+        <div class="cart__content">
+          <i class="fas fa-times close_btn"></i>
+          <h2>Your Orders</h2>
+          <div class="underline"></div>
+          <p class="cart_timeStamp">As of today</p>
+          <div class="cartDOM"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
